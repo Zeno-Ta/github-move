@@ -5,19 +5,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptinopAPI", "cryptinopAP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptinopWeb", "cryptinopWeb\cryptinopWeb.csproj", "{7E7081B6-7789-4F7E-90F3-49E359D33C09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptinopDAL", "cryptinopDAL\cryptinopDAL.csproj", "{7E5D81B3-0DD3-4E73-B1E2-B8F7271202E7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptinopAffaire", "cryptinopAffaire\cryptinopAffaire.csproj", "{028BBED2-01D4-46DA-B26E-0A88E8ED44D7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptinopCommun", "cryptinopCommun\cryptinopCommun.csproj", "{004B7040-832A-4719-A61D-87937009685E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptinopAPI_Test", "cryptinopAPI_Test\cryptinopAPI_Test.csproj", "{C0EDCE83-7394-4C2D-933F-348443131439}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptinopWeb_Test", "cryptinopWeb_Test\cryptinopWeb_Test.csproj", "{BFEF5AE8-902A-4D43-BF5E-964D8169B8D5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptinopDAL_Test", "cryptinopDAL_Test\cryptinopDAL_Test.csproj", "{B98A3B8D-5BFB-4E66-9647-152D6AC9842E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptinopAffaire_Test", "cryptinopAffaire_Test\cryptinopAffaire_Test.csproj", "{43B57839-C6D3-46CE-81F6-114C74F3C9FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,18 +23,6 @@ Global
 		{7E7081B6-7789-4F7E-90F3-49E359D33C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E7081B6-7789-4F7E-90F3-49E359D33C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E7081B6-7789-4F7E-90F3-49E359D33C09}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7E5D81B3-0DD3-4E73-B1E2-B8F7271202E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E5D81B3-0DD3-4E73-B1E2-B8F7271202E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7E5D81B3-0DD3-4E73-B1E2-B8F7271202E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E5D81B3-0DD3-4E73-B1E2-B8F7271202E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{028BBED2-01D4-46DA-B26E-0A88E8ED44D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{028BBED2-01D4-46DA-B26E-0A88E8ED44D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{028BBED2-01D4-46DA-B26E-0A88E8ED44D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{028BBED2-01D4-46DA-B26E-0A88E8ED44D7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{004B7040-832A-4719-A61D-87937009685E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{004B7040-832A-4719-A61D-87937009685E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{004B7040-832A-4719-A61D-87937009685E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{004B7040-832A-4719-A61D-87937009685E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C0EDCE83-7394-4C2D-933F-348443131439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C0EDCE83-7394-4C2D-933F-348443131439}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0EDCE83-7394-4C2D-933F-348443131439}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -53,14 +31,6 @@ Global
 		{BFEF5AE8-902A-4D43-BF5E-964D8169B8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFEF5AE8-902A-4D43-BF5E-964D8169B8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFEF5AE8-902A-4D43-BF5E-964D8169B8D5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B98A3B8D-5BFB-4E66-9647-152D6AC9842E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B98A3B8D-5BFB-4E66-9647-152D6AC9842E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B98A3B8D-5BFB-4E66-9647-152D6AC9842E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B98A3B8D-5BFB-4E66-9647-152D6AC9842E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{43B57839-C6D3-46CE-81F6-114C74F3C9FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{43B57839-C6D3-46CE-81F6-114C74F3C9FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{43B57839-C6D3-46CE-81F6-114C74F3C9FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{43B57839-C6D3-46CE-81F6-114C74F3C9FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
