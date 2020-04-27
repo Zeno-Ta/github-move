@@ -1,6 +1,6 @@
-**/appsettings.development.json
-**/appsettings.staging.json
-**/appsettings.production.json
+**/**/appsettings.development.json
+**/**/appsettings.staging.json
+**/**/appsettings.production.json
 
 # globs
 Makefile.in
