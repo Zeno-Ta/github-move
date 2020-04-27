@@ -14,6 +14,10 @@ test-results/
 cryptinopAPI/obj/
 cryptinopAPI/appsettings.Development.json
 
+**/**/appsettings.development.json
+**/**/appsettings.staging.json
+**/**/appsettings.production.json
+
 # Mac bundle stuff
 *.dmg
 *.app
