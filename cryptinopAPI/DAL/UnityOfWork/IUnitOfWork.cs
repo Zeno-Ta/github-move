@@ -6,6 +6,12 @@ namespace cryptinopAPI.DAL.UnityOfWork
     {
         IMonnaieRepo MonnaieRepo { get; set; }
 
+        ICategorieActRepo CategorieActRepo { get; set; }
+
+        ITypeCategorieRepo TypeCategorieRepo { get; set; }
+
+        IValMonnaieRepo valMonnaieRepo { get; set; }
+
         int Persister();
     }
 }

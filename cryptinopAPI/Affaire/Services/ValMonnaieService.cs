@@ -5,31 +5,31 @@ using System.Collections.Generic;
 
 namespace cryptinopAPI.Affaire.Services
 {
-    public class MonnaieService : IMonnaieService, IServiceBase<IMonnaie>
+    public class ValMonnaieService: IValMonnaieService, IServiceBase<IValMonnaie>
     {
         readonly IUnitOfWork _unitOfWork;
 
-        public MonnaieService(IUnitOfWork unitOfWork)
+        public ValMonnaieService(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
 
-        public void Ajouter(IMonnaie obj)
+        public void Ajouter(IValMonnaie obj)
         {
             throw new NotImplementedException();
         }
 
-        public void Modifier(IMonnaie obj)
+        public void Modifier(IValMonnaie obj)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<IMonnaie> Obtenir()
+        public IEnumerable<IValMonnaie> Obtenir()
         {
             throw new NotImplementedException();
         }
 
-        public IMonnaie Obtenir(int id)
+        public IValMonnaie Obtenir(int id)
         {
             throw new NotImplementedException();
         }

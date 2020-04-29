@@ -1,29 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using cryptinopAPI.DAL.Context;
 using cryptinopAPI.Models;
 
 namespace cryptinopAPI.DAL.Repositories
 {
-    public class MonnaieRepo : IMonnaieRepo, IRepositoryBase<IMonnaie>
+    public class ValMonnaieRepo : IValMonnaieRepo, IRepositoryBase<IValMonnaie>
     {
-        public void Ajouter(IMonnaie obj)
+        public void Ajouter(IValMonnaie obj)
         {
             throw new NotImplementedException();
         }
 
-        public void Modifier(IMonnaie obj)
+        public void Modifier(IValMonnaie obj)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<IMonnaie> Obtenir()
+        public IEnumerable<IValMonnaie> Obtenir()
         {
             throw new NotImplementedException();
         }
 
-        public IMonnaie Obtenir(int id)
+        public IValMonnaie Obtenir(int id)
         {
             throw new NotImplementedException();
         }

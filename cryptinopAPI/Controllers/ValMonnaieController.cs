@@ -12,48 +12,48 @@ namespace cryptinopAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MonnaieController : ControllerBase
+    public class ValMonnaieController : ControllerBase
     {
         private readonly CryptinopContext _context;
 
-        public MonnaieController(CryptinopContext context)
+        public ValMonnaieController(CryptinopContext context)
         {
             _context = context;
         }
 
-        // GET: api/Monnaie
+        // GET: api/ValMonnaie
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Monnaie>>> GetMonnaies()
+        public async Task<ActionResult<IEnumerable<ValMonnaie>>> GetValMonnaies()
         {
-            return await _context.Monnaies.ToListAsync();
+            return await _context.ValMonnaies.ToListAsync();
         }
 
-        // GET: api/Monnaie/5
+        // GET: api/ValMonnaie/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Monnaie>> GetMonnaie(int id)
+        public async Task<ActionResult<ValMonnaie>> GetValMonnaie(int id)
         {
-            var monnaie = await _context.Monnaies.FindAsync(id);
+            var valMonnaie = await _context.ValMonnaies.FindAsync(id);
 
-            if (monnaie == null)
+            if (valMonnaie == null)
             {
                 return NotFound();
             }
 
-            return monnaie;
+            return valMonnaie;
         }
 
-        // PUT: api/Monnaie/5
+        // PUT: api/ValMonnaie/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutMonnaie(int id, Monnaie monnaie)
+        public async Task<IActionResult> PutValMonnaie(int id, ValMonnaie valMonnaie)
         {
-            if (id != monnaie.Id)
+            if (id != valMonnaie.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(monnaie).State = EntityState.Modified;
+            _context.Entry(valMonnaie).State = EntityState.Modified;
 
             try
             {
@@ -61,7 +61,7 @@ namespace cryptinopAPI.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!MonnaieExists(id))
+                if (!ValMonnaieExists(id))
                 {
                     return NotFound();
                 }
@@ -74,37 +74,37 @@ namespace cryptinopAPI.Controllers
             return NoContent();
         }
 
-        // POST: api/Monnaie
+        // POST: api/ValMonnaie
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPost]
-        public async Task<ActionResult<Monnaie>> PostMonnaie(Monnaie monnaie)
+        public async Task<ActionResult<ValMonnaie>> PostValMonnaie(ValMonnaie valMonnaie)
         {
-            _context.Monnaies.Add(monnaie);
+            _context.ValMonnaies.Add(valMonnaie);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetMonnaie", new { id = monnaie.Id }, monnaie);
+            return CreatedAtAction("GetValMonnaie", new { id = valMonnaie.Id }, valMonnaie);
         }
 
-        // DELETE: api/Monnaie/5
+        // DELETE: api/ValMonnaie/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Monnaie>> DeleteMonnaie(int id)
+        public async Task<ActionResult<ValMonnaie>> DeleteValMonnaie(int id)
         {
-            var monnaie = await _context.Monnaies.FindAsync(id);
-            if (monnaie == null)
+            var valMonnaie = await _context.ValMonnaies.FindAsync(id);
+            if (valMonnaie == null)
             {
                 return NotFound();
             }
 
-            _context.Monnaies.Remove(monnaie);
+            _context.ValMonnaies.Remove(valMonnaie);
             await _context.SaveChangesAsync();
 
-            return monnaie;
+            return valMonnaie;
         }
 
-        private bool MonnaieExists(int id)
+        private bool ValMonnaieExists(int id)
         {
-            return _context.Monnaies.Any(e => e.Id == id);
+            return _context.ValMonnaies.Any(e => e.Id == id);
         }
     }
 }

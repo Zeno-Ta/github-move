@@ -1,3 +1,7 @@
+**/**/appsettings.development.json
+**/**/appsettings.staging.json
+**/**/appsettings.production.json
+
 # globs
 Makefile.in
 *.userprefs
@@ -12,7 +16,6 @@ tarballs/
 test-results/
 
 cryptinopAPI/obj/
-cryptinopAPI/appsettings.Development.json
 
 # Mac bundle stuff
 *.dmg

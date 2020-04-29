@@ -11,7 +11,11 @@ namespace cryptinopAPI.DAL.Context
         {
         }
 
+        public DbSet<CategorieActivite> Categories { get; set; }
+        public DbSet<TypeCategorie> Types { get; set; }
         public DbSet<Monnaie> Monnaies { get; set; }
+        public DbSet<ValMonnaie> ValMonnaies { get; set; }
+
     
     }
 }
