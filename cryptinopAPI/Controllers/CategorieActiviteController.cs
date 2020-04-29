@@ -12,48 +12,48 @@ namespace cryptinopAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MonnaieController : ControllerBase
+    public class CategorieActiviteController : ControllerBase
     {
         private readonly CryptinopContext _context;
 
-        public MonnaieController(CryptinopContext context)
+        public CategorieActiviteController(CryptinopContext context)
         {
             _context = context;
         }
 
-        // GET: api/Monnaie
+        // GET: api/CategorieActivite
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Monnaie>>> GetMonnaies()
+        public async Task<ActionResult<IEnumerable<CategorieActivite>>> GetCategories()
         {
-            return await _context.Monnaies.ToListAsync();
+            return await _context.Categories.ToListAsync();
         }
 
-        // GET: api/Monnaie/5
+        // GET: api/CategorieActivite/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Monnaie>> GetMonnaie(int id)
+        public async Task<ActionResult<CategorieActivite>> GetCategorieActivite(int id)
         {
-            var monnaie = await _context.Monnaies.FindAsync(id);
+            var categorieActivite = await _context.Categories.FindAsync(id);
 
-            if (monnaie == null)
+            if (categorieActivite == null)
             {
                 return NotFound();
             }
 
-            return monnaie;
+            return categorieActivite;
         }
 
-        // PUT: api/Monnaie/5
+        // PUT: api/CategorieActivite/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutMonnaie(int id, Monnaie monnaie)
+        public async Task<IActionResult> PutCategorieActivite(int id, CategorieActivite categorieActivite)
         {
-            if (id != monnaie.Id)
+            if (id != categorieActivite.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(monnaie).State = EntityState.Modified;
+            _context.Entry(categorieActivite).State = EntityState.Modified;
 
             try
             {
@@ -61,7 +61,7 @@ namespace cryptinopAPI.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!MonnaieExists(id))
+                if (!CategorieActiviteExists(id))
                 {
                     return NotFound();
                 }
@@ -74,37 +74,37 @@ namespace cryptinopAPI.Controllers
             return NoContent();
         }
 
-        // POST: api/Monnaie
+        // POST: api/CategorieActivite
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPost]
-        public async Task<ActionResult<Monnaie>> PostMonnaie(Monnaie monnaie)
+        public async Task<ActionResult<CategorieActivite>> PostCategorieActivite(CategorieActivite categorieActivite)
         {
-            _context.Monnaies.Add(monnaie);
+            _context.Categories.Add(categorieActivite);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetMonnaie", new { id = monnaie.Id }, monnaie);
+            return CreatedAtAction("GetCategorieActivite", new { id = categorieActivite.Id }, categorieActivite);
         }
 
-        // DELETE: api/Monnaie/5
+        // DELETE: api/CategorieActivite/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Monnaie>> DeleteMonnaie(int id)
+        public async Task<ActionResult<CategorieActivite>> DeleteCategorieActivite(int id)
         {
-            var monnaie = await _context.Monnaies.FindAsync(id);
-            if (monnaie == null)
+            var categorieActivite = await _context.Categories.FindAsync(id);
+            if (categorieActivite == null)
             {
                 return NotFound();
             }
 
-            _context.Monnaies.Remove(monnaie);
+            _context.Categories.Remove(categorieActivite);
             await _context.SaveChangesAsync();
 
-            return monnaie;
+            return categorieActivite;
         }
 
-        private bool MonnaieExists(int id)
+        private bool CategorieActiviteExists(int id)
         {
-            return _context.Monnaies.Any(e => e.Id == id);
+            return _context.Categories.Any(e => e.Id == id);
         }
     }
 }

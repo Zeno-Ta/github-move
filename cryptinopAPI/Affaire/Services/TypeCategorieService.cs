@@ -1,35 +1,34 @@
 ﻿using System;
-using cryptinopAPI.Models;
-using cryptinopAPI.DAL.UnityOfWork;
 using System.Collections.Generic;
-
+using cryptinopAPI.DAL.UnityOfWork;
+using cryptinopAPI.Models;
 namespace cryptinopAPI.Affaire.Services
 {
-    public class MonnaieService : IMonnaieService, IServiceBase<IMonnaie>
+    public class TypeCategorieService: ITypeCategorieService, IServiceBase<ITypeCategorie>
     {
         readonly IUnitOfWork _unitOfWork;
 
-        public MonnaieService(IUnitOfWork unitOfWork)
+        public TypeCategorieService(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
 
-        public void Ajouter(IMonnaie obj)
+        public void Ajouter(ITypeCategorie obj)
         {
             throw new NotImplementedException();
         }
 
-        public void Modifier(IMonnaie obj)
+        public void Modifier(ITypeCategorie obj)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<IMonnaie> Obtenir()
+        public IEnumerable<ITypeCategorie> Obtenir()
         {
             throw new NotImplementedException();
         }
 
-        public IMonnaie Obtenir(int id)
+        public ITypeCategorie Obtenir(int id)
         {
             throw new NotImplementedException();
         }

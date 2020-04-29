@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using cryptinopAPI.DAL.Context;
@@ -9,9 +10,10 @@ using cryptinopAPI.DAL.Context;
 namespace cryptinopAPI.Migrations
 {
     [DbContext(typeof(CryptinopContext))]
-    partial class CryptinopContextModelSnapshot : ModelSnapshot
+    [Migration("20200429040338_CompleterModel")]
+    partial class CompleterModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

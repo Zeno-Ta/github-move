@@ -8,6 +8,13 @@ namespace cryptinopAPI.DAL.UnityOfWork
     {
         public IMonnaieRepo MonnaieRepo { get; set; }
 
+        public ICategorieActRepo CategorieActRepo { get; set; }
+
+        public ITypeCategorieRepo TypeCategorieRepo { get; set; }
+
+        public IValMonnaieRepo valMonnaieRepo { get; set; }
+
+
         CryptinopContext _context;
 
         public UnitOfWork(CryptinopContext context)
