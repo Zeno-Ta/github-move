@@ -5,25 +5,33 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using cryptinopAPI.DAL.Context;
 using cryptinopAPI.Models;
+using AutoMapper;
+using cryptinop_cpo.Models;
 
 namespace cryptinopAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/CategorieActivite")]
     [ApiController]
     public class CategorieActiviteController : ControllerBase
     {
+        private IMapper _mapper;
         private readonly CryptinopContext _context;
 
-        public CategorieActiviteController(CryptinopContext context)
+        public CategorieActiviteController(CryptinopContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         // GET: api/CategorieActivite
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CategorieActivite>>> GetCategories()
+        public async Task<ActionResult<IEnumerable<Categorie>>> GetCategories()
         {
-            return await _context.Categories.ToListAsync();
+            IEnumerable<CategorieActivite> categories= await _context.Categories.ToListAsync();
+
+            var response =_mapper.Map<List<Categorie>>(categories);
+
+            return response;
         }
 
         // GET: api/CategorieActivite/5

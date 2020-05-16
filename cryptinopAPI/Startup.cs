@@ -1,3 +1,5 @@
+using AutoMapper;
+using cryptinopAPI.AutoMapperProfils;
 using cryptinopAPI.DAL.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -34,6 +36,17 @@ namespace cryptinopAPI
 
             services.AddDbContext<CryptinopContext>(opts => opts.UseNpgsql(connectionString));
 
+            services.AddAutoMapper(typeof(CryptinopProfile));
+
+            /* services.AddAuthentication("Bearer")
+                .AddJwtBearer("Bearer", options =>
+                {
+                    options.Authority = "http://localhost:5000";
+                    options.RequireHttpsMetadata = false;
+
+                    options.Audience = "cryptinopAPI";
+                });*/
+
             // Register Swagger  
             services.AddSwaggerGen(options =>
             {
@@ -44,6 +57,8 @@ namespace cryptinopAPI
                     Description = "Les services de Cryptinop",
                 });
             });
+
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,7 +73,9 @@ namespace cryptinopAPI
 
             app.UseRouting();
 
-            app.UseAuthorization();
+           // app.UseAuthentication();
+
+           // app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

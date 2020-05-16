@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptinopAPI", "cryptinopAPI\cryptinopAPI.csproj", "{390DB3AF-0DB4-4562-A018-C4815BDB7CF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptinopWeb", "cryptinopWeb\cryptinopWeb.csproj", "{7E7081B6-7789-4F7E-90F3-49E359D33C09}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptinopAPI_Test", "cryptinopAPI_Test\cryptinopAPI_Test.csproj", "{C0EDCE83-7394-4C2D-933F-348443131439}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptinopWeb_Test", "cryptinopWeb_Test\cryptinopWeb_Test.csproj", "{BFEF5AE8-902A-4D43-BF5E-964D8169B8D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptinopWeb", "cryptinopWeb\cryptinopWeb.csproj", "{E96DD1EC-C04A-497F-9DB2-1A7C3DC25AFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptinop_cpo", "cryptinop_cpo\cryptinop_cpo.csproj", "{03F0E91F-C9EE-4939-994A-5B2AED422308}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptinopIDP", "cryptinopIDP\cryptinopIDP.csproj", "{5FDA2A32-7499-4678-866A-5ADE5A86A53D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +23,6 @@ Global
 		{390DB3AF-0DB4-4562-A018-C4815BDB7CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{390DB3AF-0DB4-4562-A018-C4815BDB7CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{390DB3AF-0DB4-4562-A018-C4815BDB7CF1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7E7081B6-7789-4F7E-90F3-49E359D33C09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E7081B6-7789-4F7E-90F3-49E359D33C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7E7081B6-7789-4F7E-90F3-49E359D33C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E7081B6-7789-4F7E-90F3-49E359D33C09}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C0EDCE83-7394-4C2D-933F-348443131439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C0EDCE83-7394-4C2D-933F-348443131439}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0EDCE83-7394-4C2D-933F-348443131439}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -31,6 +31,18 @@ Global
 		{BFEF5AE8-902A-4D43-BF5E-964D8169B8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFEF5AE8-902A-4D43-BF5E-964D8169B8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFEF5AE8-902A-4D43-BF5E-964D8169B8D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E96DD1EC-C04A-497F-9DB2-1A7C3DC25AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E96DD1EC-C04A-497F-9DB2-1A7C3DC25AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E96DD1EC-C04A-497F-9DB2-1A7C3DC25AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E96DD1EC-C04A-497F-9DB2-1A7C3DC25AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03F0E91F-C9EE-4939-994A-5B2AED422308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03F0E91F-C9EE-4939-994A-5B2AED422308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03F0E91F-C9EE-4939-994A-5B2AED422308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03F0E91F-C9EE-4939-994A-5B2AED422308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FDA2A32-7499-4678-866A-5ADE5A86A53D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FDA2A32-7499-4678-866A-5ADE5A86A53D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FDA2A32-7499-4678-866A-5ADE5A86A53D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FDA2A32-7499-4678-866A-5ADE5A86A53D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection

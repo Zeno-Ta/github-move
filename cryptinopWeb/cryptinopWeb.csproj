@@ -6,4 +6,21 @@
 
 
 
+  <ItemGroup>
+    <ProjectReference Include="..\cryptinop_cpo\cryptinop_cpo.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="3.1.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\CategorieActivite\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Home\Logout.cshtml" />
+  </ItemGroup>
 </Project>

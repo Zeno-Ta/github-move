@@ -10,15 +10,15 @@ using cryptinopAPI.DAL.Context;
 namespace cryptinopAPI.Migrations
 {
     [DbContext(typeof(CryptinopContext))]
-    [Migration("20200429040338_CompleterModel")]
-    partial class CompleterModel
+    [Migration("20200516185953_Initial_Database")]
+    partial class Initial_Database
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn)
-                .HasAnnotation("ProductVersion", "3.1.3")
+                .HasAnnotation("ProductVersion", "3.1.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             modelBuilder.Entity("cryptinopAPI.Models.CategorieActivite", b =>
